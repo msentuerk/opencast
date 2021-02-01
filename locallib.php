@@ -632,20 +632,7 @@ class assign_submission_opencast extends assign_submission_plugin{
                     $out .= "<br>";
                     $out .= "<strong>".get_string('pres', 'assignsubmission_opencast')."</strong>";
                     $out .= "<br>";
-                    $out .= "<video width='400' controls>  
-                             <source src='$presenter_video_url' type='video/mp4'>
-                                 Your browser does not support the video tag.
-                             </video>";
-
-                }
-                if($presentation_video_url != ''){
-                    $out .= "<br>";
-                    $out .= "<strong>".get_string('presentation', 'assignsubmission_opencast')."</strong>";
-                    $out .= "<br>";
-                    $out .= "<video width='400' controls>  
-                             <source src='$presenter_video_url' type='video/mp4'>
-                             </video>";
-
+                    $out .= "<a href='http://localhost:8080/engage/theodul/ui/core.html?id=$videoidentifier'>Video Link Presenter</a>";
                 }
                 return $out;
         }
