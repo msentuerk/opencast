@@ -201,7 +201,7 @@ class process_event {
         }
 
         $publistoengage = get_config('block_opencast', 'publishtoengage');
-        $publistoengage = (empty($publistoengage)) ? "false" : "true";
+        $publistoengage = "true";
 
         $processing = array();
         $processing['workflow'] = $uploadworkflow;
