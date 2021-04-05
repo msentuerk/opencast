@@ -241,7 +241,7 @@ class api_request extends \curl {
 
         // If extension is empty, add extension base on mimetype.
         if (empty($extension)) {
-            $mimetype = file_storage::mimetype_from_file($file->get_fullpath());
+            $mimetype = \file_storage::mimetype_from_file($file->get_fullpath());
             $extension = mimeinfo_from_type('extension', $mimetype);
             $filename .= '.' . $extension;
         }
