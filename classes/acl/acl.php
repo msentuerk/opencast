@@ -71,6 +71,7 @@ class acl
             3 =>
                 array (
                     'id' => '3',
+                    // 'rolename' => '[COURSEID]_Instructure',
                     'rolename' => '[COURSEID]_Student',
                     'actions' =>
                         array (
@@ -79,6 +80,8 @@ class acl
                         ),
                     'permanent' => '1',
                 ),
+            // Learner is not neccessary, maybe in future,
+            // Videos shall not be visible für students
             4 =>
                 array (
                     'id' => '4',

@@ -252,7 +252,7 @@ class assign_submission_opencast extends assign_submission_plugin{
             'objectid' => $submission->id,
             'other' => array(
                 'pathnamehashes' => array(),
-                'content' => trim($data->titile),
+                'content' => trim($data->title),
             )
         );
 
