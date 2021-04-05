@@ -40,7 +40,7 @@ class api_credentials  {
      * @throws \dml_exception
      * @throws \moodle_exception
      */
-    public function get_credentials() {
+    public static function get_credentials() {
         $plugin = "assignsubmission_opencast";
 
         $username = get_config($plugin, 'apiusername');
